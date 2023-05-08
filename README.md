@@ -1,6 +1,6 @@
 # pyllm
 
-A very simple Large Language Model (LLM) library. It uses OpenAI `gpt-3.5-turbo` model.
+A very simple Large Language Model (LLM) library. It uses the OpenAI `gpt-3.5-turbo` model.
 
 ## Examples
 
@@ -119,3 +119,7 @@ The word "απεχουσι" is a Greek verb that means "they are far away" or "t
 etymology comes from the prefix "απο-" meaning "away from" and the verb "εχω" meaning "to have". 
 In terms of grammar, it is a present tense verb in the third person plural.
 ```
+
+## Additional Parameters
+
+You can pass [additional parameters](https://platform.openai.com/docs/api-reference/chat) in the `kwargs` of the `llm(prompt, **kwargs)` function.
