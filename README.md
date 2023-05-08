@@ -67,6 +67,8 @@ the prefix απο- meaning "away from" and the verb εχω meaning "to have". To
 "they are away from" or "they have abstained from".
 ```
 
+## Stringified Dictionary
+
 Surprisingly, the LLM can also understand a stringified dictionary.
 
 ```python
