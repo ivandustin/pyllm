@@ -1,3 +1,4 @@
+from functools import partial
 from .chat import chat
 
-llm = chat
+llm = partial(chat, model="gpt-3.5-turbo", temperature=0)
