@@ -66,3 +66,26 @@ Output
 the prefix απο- meaning "away from" and the verb εχω meaning "to have". Together, απεχουσι means 
 "they are away from" or "they have abstained from".
 ```
+
+Surprisingly, the LLM can also understand a stringified dictionary.
+
+```python
+from pyllm import llm
+
+prompt = {
+    "task": ["define succinctly"],
+    "features": ["etymology", "grammar", "description"],
+    "word": "απεχουσι"
+}
+
+response = llm(str(prompt))
+print(response)
+```
+
+Output
+
+```
+The word "απεχουσι" is a Greek verb that means "they are far away" or "they keep away". Its 
+etymology comes from the prefix "απο-" meaning "away from" and the verb "εχω" meaning "to have". 
+In terms of grammar, it is a present tense verb in the third person plural.
+```
