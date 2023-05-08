@@ -6,28 +6,26 @@ from .retry import retry
 logger = logging.getLogger(__name__)
 
 
-def chat(model):
-    def function(prompt):
-        logger.info(f"Model {model}")
-        logger.info(f"Input\n{prompt}")
-        response = request(model, prompt)
-        logger.info(f"Response\n{response}")
-        output = choice(response["choices"])["message"]["content"]
-        logger.info(f"Output\n{output}")
-        return output
-
-    return function
+def chat(prompt, **kwargs):
+    default = dict(model="gpt-3.5-turbo", temperature=0)
+    parameters = {**default, **kwargs}
+    logger.info(f"Input\n{prompt}")
+    logger.info(f"Parameters\n{parameters}")
+    response = request(prompt, parameters)
+    logger.info(f"Response\n{response}")
+    output = choice(response["choices"])["message"]["content"]
+    logger.info(f"Output\n{output}")
+    return output
 
 
 @retry
-def request(model, prompt):
+def request(prompt, parameters):
     return openai.ChatCompletion.create(
-        model=model,
-        temperature=0,
         messages=[
             {
                 "role": "user",
                 "content": prompt,
             }
         ],
+        **parameters,
     )
