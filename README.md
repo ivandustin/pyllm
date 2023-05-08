@@ -71,6 +71,34 @@ the prefix απο- meaning "away from" and the verb εχω meaning "to have". To
 
 Surprisingly, the LLM can also understand a stringified dictionary.
 
+### Coding
+
+```python
+from pyllm import llm
+
+prompt = {
+    "task": "code",
+    "language": "python",
+    "problem": "add two numbers from stdin",
+    "code": ""
+}
+
+response = llm(str(prompt))
+print(response)
+```
+
+> **Note:** The empty `code` entry is needed so that the model will produce a pure source code.
+
+Output
+
+```python
+a = int(input())
+b = int(input())
+print(a + b)
+```
+
+### Word Definition
+
 ```python
 from pyllm import llm
 
