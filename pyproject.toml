@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pyllm"
 version = "0.1.0"
-description = ""
+description = "Easy to use LLM library"
 authors = ["Ivan Dustin Bilon <ivan22.dust@gmail.com>"]
 license = "MIT"
 readme = "README.md"
