@@ -1,6 +1,6 @@
 # pyllm
 
-`pyllm` is a user-friendly library that allows you to easily work with Large Language Models (LLMs), specifically leveraging OpenAI's `gpt-3.5-turbo` model.
+A very simple Large Language Model (LLM) library. It uses OpenAI `gpt-3.5-turbo` model.
 
 ## Examples
 
