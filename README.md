@@ -2,7 +2,7 @@
 
 `pyllm` is a user-friendly library that allows you to easily work with Large Language Models (LLMs), specifically leveraging OpenAI's `gpt-3.5-turbo` model.
 
-## Example
+## Examples
 
 > **Note:** Make sure to set the `OPENAI_API_KEY` environment variable.
 
@@ -43,4 +43,24 @@ num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 sum = num1 + num2
 print("The sum of", num1, "and", num2, "is", sum)
+```
+
+### Word Definition
+
+```python
+from pyllm import llm
+
+prompt = """task: define succinctly
+features: etymology, grammar, description
+word: απεχουσι
+"""
+
+response = llm(prompt)
+print(response)
+```
+
+Output
+
+```
+απεχουσι is a Greek verb in the present tense, third person plural form. Its etymology comes from the prefix απο- meaning "away from" and the verb εχω meaning "to have". Together, απεχουσι means "they are away from" or "they have abstained from".
 ```
