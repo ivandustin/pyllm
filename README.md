@@ -62,5 +62,8 @@ print(response)
 Output
 
 ```
-απεχουσι is a Greek verb in the present tense, third person plural form. Its etymology comes from the prefix απο- meaning "away from" and the verb εχω meaning "to have". Together, απεχουσι means "they are away from" or "they have abstained from".
+απεχουσι is a Greek verb in the present tense, third person plural form. Its et
+ymology comes from the prefix απο- meaning "away from" and the verb εχω meaning
+ "to have". Together, απεχουσι means "they are away from" or "they have abstain
+ed from".
 ```
