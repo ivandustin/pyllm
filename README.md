@@ -1,6 +1,6 @@
 # pyllm
 
-A very simple Large Language Model (LLM) library. It uses the OpenAI `gpt-3.5-turbo` model.
+A very simple Large Language Model (LLM) API. It uses the OpenAI `gpt-3.5-turbo` model.
 
 ## Examples
 

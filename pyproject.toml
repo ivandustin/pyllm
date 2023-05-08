@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pyllm"
 version = "0.1.0"
-description = "A very simple Large Language Model (LLM) library"
+description = "A very simple Large Language Model (LLM) API"
 authors = ["Ivan Dustin Bilon <ivan22.dust@gmail.com>"]
 license = "MIT"
 readme = "README.md"
