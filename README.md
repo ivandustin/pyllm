@@ -5,6 +5,12 @@ A very simple Large Language Model (LLM) API. It uses the OpenAI `gpt-3.5-turbo`
 ## Install
 
 ```
+pip install git+https://github.com/ivandustin/pyllm.git
+```
+
+### Poetry
+
+```
 poetry add git+https://github.com/ivandustin/pyllm.git
 ```
 
