@@ -10,7 +10,7 @@ poetry add git+https://github.com/ivandustin/pyllm.git
 
 ## Examples
 
-> **Note:** Make sure to set the `OPENAI_API_KEY` environment variable.
+> **Note:** Make sure to set the `OPENAI_API_KEY` environment variable. You can get it [here](https://platform.openai.com/account/api-keys).
 
 ### Basic Usage
 
