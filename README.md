@@ -2,6 +2,12 @@
 
 A very simple Large Language Model (LLM) API. It uses the OpenAI `gpt-3.5-turbo` model.
 
+## Install
+
+```
+poetry add git+https://github.com/ivandustin/pyllm.git
+```
+
 ## Examples
 
 > **Note:** Make sure to set the `OPENAI_API_KEY` environment variable.
